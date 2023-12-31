@@ -1,0 +1,17 @@
+D:\KnowledgeCenter\C#\Cube Master\Copper Master\bin\Debug\Copper Master.exe.config
+D:\KnowledgeCenter\C#\Cube Master\Copper Master\bin\Debug\Copper Master.exe
+D:\KnowledgeCenter\C#\Cube Master\Copper Master\bin\Debug\Copper Master.pdb
+D:\KnowledgeCenter\C#\Cube Master\Copper Master\obj\Debug\Copper Master.csproj.AssemblyReference.cache
+D:\KnowledgeCenter\C#\Cube Master\Copper Master\obj\Debug\Copper Master.csproj.SuggestedBindingRedirects.cache
+D:\KnowledgeCenter\C#\Cube Master\Copper Master\obj\Debug\Copper Master_MarkupCompile.cache
+D:\KnowledgeCenter\C#\Cube Master\Copper Master\obj\Debug\Copper Master_MarkupCompile.lref
+D:\KnowledgeCenter\C#\Cube Master\Copper Master\obj\Debug\Copper Master.g.resources
+D:\KnowledgeCenter\C#\Cube Master\Copper Master\obj\Debug\Copper_Master.Properties.Resources.resources
+D:\KnowledgeCenter\C#\Cube Master\Copper Master\obj\Debug\Copper Master.csproj.GenerateResource.cache
+D:\KnowledgeCenter\C#\Cube Master\Copper Master\obj\Debug\Copper Master.csproj.CoreCompileInputs.cache
+D:\KnowledgeCenter\C#\Cube Master\Copper Master\obj\Debug\Copper Master.exe
+D:\KnowledgeCenter\C#\Cube Master\Copper Master\obj\Debug\Copper Master.pdb
+D:\KnowledgeCenter\C#\Cube Master\Copper Master\obj\Debug\UI\MainWindow.g.cs
+D:\KnowledgeCenter\C#\Cube Master\Copper Master\obj\Debug\UI\App.g.cs
+D:\KnowledgeCenter\C#\Cube Master\Copper Master\obj\Debug\UI\App.baml
+D:\KnowledgeCenter\C#\Cube Master\Copper Master\obj\Debug\UI\MainWindow.baml

@@ -1,0 +1,90 @@
+﻿<Window x:Class="Copper_Master.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Copper_Master"
+        mc:Ignorable="d"
+        Title="Copper Master" Height="450" Width="800" Background="#FFF9F9F9" MinHeight="450" MinWidth="800" WindowStartupLocation="CenterScreen" Topmost="{Binding ElementName=rbTopWindowModeOn, Path=IsChecked}">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Border Grid.Column="0" Background="#FF224F38" Padding="30,10">
+            <DockPanel>
+                <StackPanel DockPanel.Dock="Top">
+                    <Button Name="CreateBar" Style="{DynamicResource RoundButton}" Content="Create Bar" Click="CreateBar_Click"/>                
+                                   
+                    
+                </StackPanel>
+                
+
+                <!--Top Window Mode-->
+                <DockPanel Name="dpTopWindowMode"
+                           DockPanel.Dock="Bottom" Height="40" VerticalAlignment="Bottom" LastChildFill="False">
+                    <DockPanel.Resources>
+                        <Style TargetType="{x:Type Label}">
+                            <Setter Property="Foreground" Value="#FFE6E6E6"/>
+                            <Setter Property="FontWeight" Value="DemiBold"/>
+                        </Style>
+                        <Style TargetType="{x:Type RadioButton}">
+                            <Setter Property="Foreground" Value="#FFE6E6E6"/>
+                        </Style>
+                    </DockPanel.Resources>
+
+                    <Label DockPanel.Dock="Top" Content="Top Window Mode"/>
+                    <RadioButton Name="rbTopWindowModeOn" GroupName="topWindowMode" DockPanel.Dock="Left" Content="On" Margin="5,0,10,0" IsChecked="True"/>
+                    <RadioButton GroupName="topWindowMode" DockPanel.Dock="Left" Content="Off"/>
+                </DockPanel>
+
+                <Button Name="CloseDocuments" Style="{DynamicResource RoundButton}" Content="Close All" Click="CloseDocuments_Click" DockPanel.Dock="Bottom"
+                        VerticalAlignment="Bottom" Margin="0,0,0,15"/>
+            </DockPanel>
+        </Border>
+        <Grid Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="100"/>                
+                <ColumnDefinition Width="auto"/>                
+                <ColumnDefinition Width="*"/>                
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Label Grid.Column="0" Grid.Row="0" Content="Bar Parameters" HorizontalContentAlignment="Center" FontWeight="Bold" FontSize="14"/>
+            <Label Grid.Column="0" Grid.Row="1" Content="Width" HorizontalContentAlignment="Right" FontSize="12"/>
+            <Label Grid.Column="0" Grid.Row="2" Content="Thickness" HorizontalContentAlignment="Right" FontSize="12"/>
+            <Label Grid.Column="0" Grid.Row="3" Content="Length" HorizontalContentAlignment="Right" FontSize="12"/>
+            <Label Grid.Column="2" Grid.Row="1" Content="[mm]" HorizontalContentAlignment="Left" FontSize="12"/>
+            <Label Grid.Column="2" Grid.Row="2" Content="[mm]" HorizontalContentAlignment="Left" FontSize="12"/>
+            <Label Grid.Column="2" Grid.Row="3" Content="[mm]" HorizontalContentAlignment="Left" FontSize="12"/>
+
+            <ComboBox x:Name="CreateBarWidth" Grid.Column="1" Grid.Row="1" VerticalAlignment="Center">
+                <ComboBoxItem Content="40"/>
+                <ComboBoxItem Content="50"/>
+                <ComboBoxItem Content="60"/>
+                <ComboBoxItem Content="80"/>
+                <ComboBoxItem Content="100"/>
+                <ComboBoxItem Content="120"/>
+                <ComboBoxItem Content="160"/>
+                <ComboBoxItem Content="200"/>
+            </ComboBox>
+            <ComboBox x:Name="CreateBarThickness" Grid.Column="1" Grid.Row="2" VerticalAlignment="Center">
+                <ComboBoxItem Content="5"/>
+                <ComboBoxItem Content="10"/>
+                <ComboBoxItem Content="15"/>
+                <ComboBoxItem Content="20"/>                
+            </ComboBox>
+            <TextBox x:Name="CreateBarLength" Grid.Column="1" Grid.Row="3" VerticalAlignment="Center"/>
+            <CheckBox x:Name="holesOnBothSidesCHB" IsChecked="True" Grid.Row="5" Grid.Column="3"
+                      Content="Holes on both sides"/>
+
+        </Grid>
+
+    </Grid>
+</Window>
